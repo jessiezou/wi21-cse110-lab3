@@ -1,3 +1,47 @@
 body {
         background-color: lightblue;
       }
+
+*.warning {
+  background-color: rgba(255,0,0,0.3);;
+}
+p.yel {
+  background: #ffffe0
+}
+
+#yeet {
+  background:hsl(0, 100%, 50%)
+}
+
+div,
+p {
+  background-color: green
+}
+
+a[target=lul] {
+  background-color: yellow;
+}
+
+a:hover {
+  color: rgb(172, 62, 117);
+}
+
+a:active {
+  color: rgb(28, 138, 153);
+}
+
+ul ul {
+  list-style-type: circle
+}
+
+header > h1 {
+  margin: 1cm
+}
+
+p ~ span {
+  color: blue
+}
+
+img + p {
+  font-weight: italic
+}
