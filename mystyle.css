@@ -1,3 +1,5 @@
+/* yo whats good this is a comment! I LOVE WEB DEVELOPMENT!!!!! */
+
 body {
         background-color: lightblue;
       }
@@ -5,20 +7,42 @@ body {
 *.warning {
   background-color: rgba(255,0,0,0.3);;
 }
+
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 200px;
+
+}
 p.yel {
-  background: #ffffe0
+  font-family: 'Open Sans', sans-serif;
+  height: 123px;
+  width: 100%;
+  border-style: dotted;
+  border-color: green;
+  border-width: 3px;
+  border-radius: 32px;
+  background: #ffffe0;
+  max-width: 100%;
+  min-width: 90%;
 }
 
-#yeet {
+#yeet.absolute {
+  position:absolute;
   background:hsl(0, 100%, 50%)
 }
 
 div,
 p {
-  background-color: green
+  display: inline-block;
+  border-style: solid;
+  border-width: 1vw;
+  border-radius: 1vh;
 }
 
 a[target=lul] {
+  display: block;
   background-color: yellow;
 }
 
@@ -35,13 +59,69 @@ ul ul {
 }
 
 header > h1 {
-  margin: 1cm
+  display: inline;
+  margin: auto;
+  border-style: solid;
+  border-radius: 5vmax;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 25px;
 }
 
 p ~ span {
-  color: blue
+  color: blue;
+  margin: 20px 30px 15px 25px;
+  padding: 1px 1px 1px 1px;
 }
 
 img + p {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: 2px;
+  margin-right:10px;
   font-weight: italic
+}
+
+span.relative {
+  position: relative;
+  width: 2vw;
+  border: 15px solid rgb(46, 85, 46);
+  padding: 1vw;
+  margin: 5px;
+}
+
+.flex-container {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: rgb(182, 94, 190);
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 15px;
+  line-height: 150px;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  text-align: center;
+  flex-shrink: 2;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px;
+  grid-gap: 30px;
+}
+
+.item-first {
+  justify-self: start;
+}
+.item-second {
+  align-self: end;
 }
